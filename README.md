@@ -9,8 +9,8 @@ A modern, customizable LinkTree clone built with Flutter that allows users to cr
 
 ## Prerequisites
 
-- Flutter (2.5.0 or higher)
-- Dart SDK (2.14.0 or higher)
+- Flutter 
+- Dart SDK 
 - Android Studio / VS Code with Flutter extensions
 
 ## Installation
