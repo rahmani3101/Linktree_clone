@@ -100,7 +100,7 @@ class LinktreePage extends StatelessWidget {
                 _buildLinkButton(
                   icon: Icons.language,
                   text: 'Resume',
-                  url: 'https://yourwebsite.com',
+                  url: 'https://1drv.ms/b/c/e7d1e1a55ba2e93b/EcA_kFZXW-RMhCasIqT4OVgBkGoFRhvGi-Q4gGkvrJn9PA?e=gs0wqA',
                 ),
                 _buildLinkButton(
                   icon: FontAwesomeIcons.github,
