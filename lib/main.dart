@@ -119,6 +119,12 @@ class LinktreePage extends StatelessWidget {
                   url: 'https://instagram.com/rahmani__asad',
                 ),
                 _buildLinkButton(
+                  icon: FontAwesomeIcons.code,
+                  text: ' Developer Profile',
+                  url: 'https://developers.google.com/profile/u/rahmani__asad',
+                ),
+
+                _buildLinkButton(
                   icon: FontAwesomeIcons.twitter,
                   text: 'X (Twitter)',
                   url: 'https://x.com/rahmani__asad',
