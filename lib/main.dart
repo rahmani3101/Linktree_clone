@@ -48,33 +48,41 @@ class LinktreePage extends StatelessWidget {
         ),
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(31.0),
             child: Column(
               children: [
-                const SizedBox(height: 150),
+                const Text(
+                  '@rahmani__asad',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(height: 40),
+
                 // Profile Photo
                 Container(
-                  width: 120,
-                  height: 120,
+                  width: 160,
+                  height: 160,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
-                      color: Colors.white,
-                      width: 3,
+                      color: const Color.fromARGB(255, 129, 101, 8),
+                      width: 6,
                     ),
                     image: const DecorationImage(
                       image: NetworkImage(
-                        'https://cdn.pixabay.com/photo/2023/07/28/18/23/bird-8155768_640.jpg',
+                        'https://www.shutterstock.com/image-vector/asad-name-arabic-diwani-calligraphy-600nw-2475698585.jpg',
                       ),
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                const SizedBox(height: 25),
+                const SizedBox(height: 35),
 
-                // Name
                 const Text(
-                  '@rahmani__asad',
+                  'Mohammad Asad Rahmani',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
@@ -100,7 +108,8 @@ class LinktreePage extends StatelessWidget {
                 _buildLinkButton(
                   icon: Icons.language,
                   text: 'Resume',
-                  url: 'https://1drv.ms/b/c/e7d1e1a55ba2e93b/EcA_kFZXW-RMhCasIqT4OVgBkGoFRhvGi-Q4gGkvrJn9PA?e=gs0wqA',
+                  url:
+                      'https://1drv.ms/b/c/e7d1e1a55ba2e93b/EcA_kFZXW-RMhCasIqT4OVgBkGoFRhvGi-Q4gGkvrJn9PA?e=v9y6ok',
                 ),
                 _buildLinkButton(
                   icon: FontAwesomeIcons.github,
@@ -113,17 +122,18 @@ class LinktreePage extends StatelessWidget {
                   url:
                       'https://www.linkedin.com/in/mohammad-asad-rahmani-a39b57257',
                 ),
-                _buildLinkButton(
-                  icon: FontAwesomeIcons.instagram,
-                  text: 'Instagram',
-                  url: 'https://instagram.com/rahmani__asad',
-                ),
+
                 _buildLinkButton(
                   icon: FontAwesomeIcons.code,
                   text: ' Developer Profile',
                   url: 'https://developers.google.com/profile/u/rahmani__asad',
                 ),
 
+                _buildLinkButton(
+                  icon: FontAwesomeIcons.instagram,
+                  text: 'Instagram',
+                  url: 'https://instagram.com/rahmani__asad',
+                ),
                 _buildLinkButton(
                   icon: FontAwesomeIcons.twitter,
                   text: 'X (Twitter)',
@@ -141,6 +151,7 @@ class LinktreePage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
+                    // ignore: deprecated_member_use
                     color: Colors.white.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -181,7 +192,7 @@ class LinktreePage extends StatelessWidget {
   }) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12.0),
-      child: Container(
+      child: SizedBox(
         width: double.infinity,
         child: ElevatedButton.icon(
           onPressed: () => _launchURL(url),
